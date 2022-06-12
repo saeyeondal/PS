@@ -18,8 +18,7 @@ string solution(vector<int> numbers) {
     sort(n.begin(), n.end(), cmp);
     for(int i=0; i<n.size(); i++){
         answer+=n[i];
-        sum=sum+numbers[i];
     }
-    if(sum==0) return "0"; 
+    if(answer[0]=='0') return "0"; 
     return answer;
 }
